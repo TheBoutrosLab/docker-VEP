@@ -1,18 +1,18 @@
 ARG MINIFORGE_VERSION=26.1.1-2
 ARG UBUNTU_VERSION=24.04
-ARG CONDA_ENV_PATH=/opt/conda/envs/tool_name
+ARG CONDA_ENV_PATH=/opt/conda/envs/vep
 
 FROM condaforge/miniforge3:${MINIFORGE_VERSION} AS builder
 
 ARG CONDA_ENV_PATH
 
 # Use conda to install tools and dependencies into the configured environment path
-ARG TOOL_VERSION=X.X.X
+ARG VEP_VERSION=116.2
 
 RUN mamba create -qy -p ${CONDA_ENV_PATH} \
     -c bioconda \
     -c conda-forge \
-    tool_name==${TOOL_VERSION} && \
+    ensembl-vep==${VEP_VERSION} && \
     mamba clean -afy
 
 # Deploy the target tools into a base image
@@ -32,5 +32,5 @@ RUN groupadd -g 500001 bldocker && \
 # Change the default user to bldocker from root
 USER bldocker
 
-LABEL   maintainer="Your Name <YourName@sbpdiscovery.org>" \
-        org.opencontainers.image.source=https://github.com/TheBoutrosLab/<REPO>
+LABEL   maintainer="Yash Patel <ypatel@sbpdiscovery.org>" \
+        org.opencontainers.image.source=https://github.com/TheBoutrosLab/docker-VEP
