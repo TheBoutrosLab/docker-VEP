@@ -30,6 +30,10 @@ jobs:
       contents: read
       packages: write
     steps:
+      - name: check disk space
+        run: |
+          df -h /
+          df -h /tmp
       - uses: TheBoutrosLab/tool-Docker-action@v2
         with:
           non-semver-tags: true
