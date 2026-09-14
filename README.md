@@ -1,51 +1,27 @@
-# docker-tool_name
-Template Repository for the Boutros Lab Dockerfiles based on mambaforge base image.
+# docker-VEP
 
-The base image is pulled from https://hub.docker.com/r/condaforge/mambaforge
+Dockerfile for the [Ensembl Variant Effect Predictor (VEP)](https://www.ensembl.org/info/docs/tools/vep/index.html), which predicts the effects of genomic variants on genes, transcripts, and proteins.
 
-# Documentation
-Docker introduction [here](https://uclahs-cds.atlassian.net/wiki/spaces/BOUTROSLAB/pages/3190419/Docker+Introduction)
+## Version
 
-Dockerfile Best Practices [here](https://uclahs-cds.atlassian.net/wiki/spaces/BOUTROSLAB/pages/3189770/Dockerfile+Best+Practices)
-
-Docker image versioning standard [here](https://uclahs-cds.atlassian.net/wiki/spaces/BOUTROSLAB/pages/3188472/Docker+image+versioning+standardization)
-
-
-# Version
 | Tool | Version |
 |------|---------|
-|tool_name| X.X.X|
-|tool_name_2|X.X.X|
+| VEP | 116.2 |
 
----
+## Documentation
 
-## Discussions
-
-- [Issue tracker](<link-to-issues-page>) to report errors and enhancement ideas.
-- Discussions can take place in [docker-<tool> Discussions](<link-to-discussions>)
-- [docker-<tool> pull requests](<link-to-pull-requests>) are also open for discussion
-
----
-
-## Contributors
-
-Please see list of [Contributors](<link-to-contributors-insights>) at GitHub.
-
----
-
-## References
-
-1. Tool specific references can be listed here
-
----
+- [VEP command-line documentation](https://www.ensembl.org/info/docs/tools/vep/script/index.html)
+- [VEP source repository](https://github.com/Ensembl/ensembl-vep)
+- [Issue tracker](https://github.com/TheBoutrosLab/docker-VEP/issues)
+- [Pull requests](https://github.com/TheBoutrosLab/docker-VEP/pulls)
 
 ## License
 
-Author: Name1, Name2
+Author: Yash Patel
 
-[docker repo name] is licensed under the GNU General Public License version 2. See the file LICENSE for the terms of the GNU GPL license.
+docker-VEP is licensed under the GNU General Public License version 2. See [LICENSE](LICENSE) for the terms of the GNU GPL license. VEP itself is distributed under the [Apache License 2.0](https://github.com/Ensembl/ensembl-vep/blob/release/116.2/LICENSE).
 
-<one line to give the program's name and a brief idea of what it does.>
+docker-VEP dockerizes VEP.
 
 Copyright (C) 2026 Sanford Burnham Prebys Medical Discovery Institute ("Boutros Lab")
 
