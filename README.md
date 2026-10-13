@@ -6,7 +6,7 @@ Dockerfile for the [Ensembl Variant Effect Predictor (VEP)](https://www.ensembl.
 
 | Tool | Version |
 |------|---------|
-| VEP | 116.2 |
+| VEP | 116.3 |
 
 ## Documentation
 
