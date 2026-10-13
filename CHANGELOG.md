@@ -11,6 +11,13 @@ Image versions follow the packaged VEP version.
 
 ---
 
+## [116.3] - 2026-10-13
+
+### Changed
+- VEP `v116.3`
+
+---
+
 ## [116.2] - 2026-09-14
 
 ### Added
