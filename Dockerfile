@@ -7,7 +7,7 @@ FROM condaforge/miniforge3:${MINIFORGE_VERSION} AS builder
 ARG CONDA_ENV_PATH
 
 # Use conda to install tools and dependencies into the configured environment path
-ARG VEP_VERSION=116.2
+ARG VEP_VERSION=116.3
 
 RUN mamba create -qy -p ${CONDA_ENV_PATH} \
     -c bioconda \
